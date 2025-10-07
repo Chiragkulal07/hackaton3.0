@@ -3,5 +3,6 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.home, name='home'),  # default route ("/assessment/")
+    path('', views.home, name='feedback_home'),
+    path('submit/', views.submit_feedback, name='feedback_submit'),
 ]
